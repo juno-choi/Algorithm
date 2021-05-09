@@ -52,8 +52,5 @@ public class AddTwoNumbers {
         if(carry==1) p3.next = new ListNode(1);
 
         return newHead.next;
-
     }
-
-
 }
