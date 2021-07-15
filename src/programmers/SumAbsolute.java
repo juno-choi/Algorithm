@@ -34,11 +34,7 @@ public class SumAbsolute {
     public int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;
         for(int i=0; i<absolutes.length; i++){
-            int su = absolutes[i];
-            if(!signs[i]){
-                su = su*-1;
-            }
-            answer += su;
+            answer += signs[i]? absolutes[i] : absolutes[i] * -1;
         }
         return answer;
     }
