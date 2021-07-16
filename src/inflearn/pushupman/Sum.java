@@ -1,3 +1,5 @@
+package inflearn.pushupman;
+
 public class Sum {
     /**
      * 각 자릿수의 합 구하기

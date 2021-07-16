@@ -1,3 +1,5 @@
+package inflearn.pushupman;
+
 import java.util.Locale;
 
 public class LicenseKeyFormatting {

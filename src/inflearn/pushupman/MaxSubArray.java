@@ -1,3 +1,5 @@
+package inflearn.pushupman;
+
 public class MaxSubArray {
     /**
      * array 중 합이 제일 큰수

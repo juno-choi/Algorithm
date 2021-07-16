@@ -1,3 +1,4 @@
+package inflearn.pushupman;
 
 public class Rectangle {
     /**

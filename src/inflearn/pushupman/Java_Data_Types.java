@@ -1,3 +1,4 @@
+package inflearn.pushupman;
 
 import java.util.*;
 

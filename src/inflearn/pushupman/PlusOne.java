@@ -1,3 +1,5 @@
+package inflearn.pushupman;
+
 public class PlusOne {
 
     public static void main(String[] args) {

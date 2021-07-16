@@ -1,3 +1,5 @@
+package inflearn.pushupman;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -18,9 +20,9 @@ public class MeetingRoom{
     public static void main(String []argh)
     {
         MeetingRoom a = new MeetingRoom();
-        //Interval in1 = new Interval(15, 20);
-        //Interval in2 = new Interval(5, 10);
-        //Interval in3 = new Interval(0, 30);
+        //inflearn.pushupman.Interval in1 = new inflearn.pushupman.Interval(15, 20);
+        //inflearn.pushupman.Interval in2 = new inflearn.pushupman.Interval(5, 10);
+        //inflearn.pushupman.Interval in3 = new inflearn.pushupman.Interval(0, 30);
 
         Interval inter1 = new Interval(7,10);
         Interval inter2 = new Interval(2,4);
