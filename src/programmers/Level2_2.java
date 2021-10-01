@@ -1,7 +1,5 @@
 package programmers;
 
-import javax.xml.soap.Node;
-
 /**
  * 문제 설명
  * n개의 음이 아닌 정수가 있습니다. 이 수를 적절히 더하거나 빼서 타겟 넘버를 만들려고 합니다. 예를 들어 [1, 1, 1, 1, 1]로 숫자 3을 만들려면 다음 다섯 방법을 쓸 수 있습니다.
@@ -31,11 +29,19 @@ public class Level2_2 {
         int solution = l.solution(numbers, target);
         System.out.println("solution = " + solution);
     }
-    int su = 0;
+
+    static int answer;
     public int solution(int[] numbers, int target) {
-        int answer = 0;
         //dfs 탐색을 통하여 문제를 풀이해야함...
+        dfs(0,0,numbers,target);
         return answer;
     }
-
+    public void dfs(int level, int sum, int[] numbers, int target){
+        if(level == numbers.length){
+            if(sum == target) answer++;
+        }else{
+            dfs(level+1, sum+numbers[level], numbers, target);
+            dfs(level+1, sum-numbers[level], numbers, target);
+        }
+    }
 }
