@@ -16,11 +16,11 @@ public class B1145 {
     }
     public static void dfs(int level, String[] s){
         int check = 0;
-        if(level % Integer.valueOf(s[0]) == 0) check++;
-        if(level % Integer.valueOf(s[1]) == 0) check++;
-        if(level % Integer.valueOf(s[2]) == 0) check++;
-        if(level % Integer.valueOf(s[3]) == 0 && check<3) check++;
-        if(level % Integer.valueOf(s[4]) == 0 && check<3) check++;
+
+        for(String str : s){
+            if(check >= 3) break;
+            if(level % Integer.valueOf(str) == 0) check++;
+        }
         if(check >=3) {
             System.out.println(level);
             return;
